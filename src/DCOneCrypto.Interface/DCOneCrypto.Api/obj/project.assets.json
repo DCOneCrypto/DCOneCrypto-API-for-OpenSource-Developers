@@ -1989,35 +1989,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WIN\\.nuget\\packages\\": {}
+    "/Users/dconeservice/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Api\\DCOneCrypto.Api.csproj",
+      "projectUniqueName": "/Users/dconeservice/D/Git/DCOne-Crypto-API-for-Open-Source-Developers/src/DCOneCrypto.Interface/DCOneCrypto.Api/DCOneCrypto.Api.csproj",
       "projectName": "DCOneCrypto.Api",
-      "projectPath": "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Api\\DCOneCrypto.Api.csproj",
-      "packagesPath": "C:\\Users\\WIN\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Api\\obj\\",
+      "projectPath": "/Users/dconeservice/D/Git/DCOne-Crypto-API-for-Open-Source-Developers/src/DCOneCrypto.Interface/DCOneCrypto.Api/DCOneCrypto.Api.csproj",
+      "packagesPath": "/Users/dconeservice/.nuget/packages/",
+      "outputPath": "/Users/dconeservice/D/Git/DCOne-Crypto-API-for-Open-Source-Developers/src/DCOneCrypto.Interface/DCOneCrypto.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dconeservice/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj": {
-              "projectPath": "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj"
+            "/Users/dconeservice/D/Git/DCOne-Crypto-API-for-Open-Source-Developers/src/DCOneCrypto.Interface/DCOneCrypto.Common/DCOneCrypto.Common.csproj": {
+              "projectPath": "/Users/dconeservice/D/Git/DCOne-Crypto-API-for-Open-Source-Developers/src/DCOneCrypto.Interface/DCOneCrypto.Common/DCOneCrypto.Common.csproj"
             }
           }
         }
@@ -2076,7 +2074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }
