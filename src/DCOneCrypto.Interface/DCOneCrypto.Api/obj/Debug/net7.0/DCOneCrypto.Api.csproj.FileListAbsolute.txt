@@ -204,3 +204,4 @@ D:\Work\free\cardano_pro\Dcone\git\DCOneCrypto-API-for-OpenSource-Developers\src
 D:\Work\free\cardano_pro\Dcone\git\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Debug\net7.0\DCOneCrypto.Api.pdb
 D:\Work\free\cardano_pro\Dcone\git\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Debug\net7.0\DCOneCrypto.Api.genruntimeconfig.cache
 D:\Work\free\cardano_pro\Dcone\git\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Debug\net7.0\ref\DCOneCrypto.Api.dll
+D:\Work\free\cardano_pro\Dcone\git\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.ReDoc.dll

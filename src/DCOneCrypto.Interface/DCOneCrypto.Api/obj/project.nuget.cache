@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iNe4uKJglB5fgQRdbeaq34S54+t8Ef1QA6+hkYOQxcKCDj9RPBNApwRjnEmRTCGGHxtidX8C+J3rO07WTp5bsA==",
+  "dgSpecHash": "3jz/2fp4xwM140puK4hbkk636mPbExhxJfRnKpupaErwx2kJVMFHBVM51O6/rbHmDsoqlphG5J46J4aw2HRaBQ==",
   "success": true,
   "projectFilePath": "D:\\Work\\free\\cardano_pro\\Dcone\\git\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Api\\DCOneCrypto.Api.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\WIN\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\WIN\\.nuget\\packages\\saucecontrol.blake2fast\\2.0.0\\saucecontrol.blake2fast.2.0.0.nupkg.sha512",
     "C:\\Users\\WIN\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\WIN\\.nuget\\packages\\swashbuckle.aspnetcore.redoc\\6.5.0\\swashbuckle.aspnetcore.redoc.6.5.0.nupkg.sha512",
     "C:\\Users\\WIN\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\WIN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\WIN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",

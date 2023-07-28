@@ -22,7 +22,7 @@ namespace DCOneCrypto.Api.Services
             return await Execute(request, newurl);
             
         }
-       public async Task<string> GetBlockInfo(object blockHashes)
+       public async Task<string> GetBlockInfo(BlockHashesModel blockHashes)
        {
            string newurl = hosturl + "/block_info";
            var request = new RestRequest(newurl, Method.Post);

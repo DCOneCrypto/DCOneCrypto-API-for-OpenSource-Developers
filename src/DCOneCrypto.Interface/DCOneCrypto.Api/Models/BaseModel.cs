@@ -2,6 +2,6 @@
 {
     public class BaseModel
     {
-        public int BaseValue { get; init; }
-    }
+        public int BaseValue { get; init; }=400;
+    }  
 }

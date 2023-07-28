@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
+using DCOneCrypto.Api.Models;
+using Swashbuckle.AspNetCore;
 using Asp.Versioning;
 
 namespace DCOneCrypto.Api.Controllers
@@ -28,7 +30,8 @@ namespace DCOneCrypto.Api.Controllers
         }
         [Route("block_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetBlockInfo([FromBody]object blockHashes)
+        
+        public async Task<ActionResult<string>> GetBlockInfo([FromBody]BlockHashesModel blockHashes)
         {
            var res = await _blockService.GetBlockInfo(blockHashes);
            return Ok(res);
@@ -36,7 +39,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("block_txs")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetBlockTxs([FromBody]object blockHashes)
+        public async Task<ActionResult<string>> GetBlockTxs([FromBody]BlockHashesModel blockHashes)
         {
            var res = await _blockService.GetBlockTxs(blockHashes);
            return Ok(res);

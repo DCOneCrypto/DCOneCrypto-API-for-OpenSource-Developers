@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using DCOneCrypto.Api.Models;
+using RestSharp;
 
 namespace DCOneCrypto.Api.Services
 {
