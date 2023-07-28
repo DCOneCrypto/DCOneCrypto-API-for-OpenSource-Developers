@@ -37,10 +37,18 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("script_redeemers")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetScriptHash(string _script_hash)
+        public async Task<ActionResult<string>> GetScriptHash(string script_hash)
         {
-            var res = await _scriptService.GetScriptHash(_script_hash);
+            var res = await _scriptService.GetScriptHash(script_hash);
             return Ok(res);
+        }
+
+        [Route("datum_info")]
+        [HttpPost]
+        public async Task<ActionResult<string>> GetDatumInfo([FromBody]object datum_hashes)
+        {
+           var res = await _scriptService.GetDatumInfo(datum_hashes);
+           return Ok(res);
         }
 
     }

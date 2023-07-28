@@ -27,6 +27,14 @@ namespace DCOneCrypto.Api.Controllers
             return Ok(res);
         }
 
+        [Route("pool_info")]
+        [HttpPost]
+        public async Task<ActionResult<string>> GetPoolInfo([FromBody]object pool_bech32_ids)
+        {
+           var res = await _poolService.GetPoolInfo(pool_bech32_ids);
+           return Ok(res);
+        }
+
         [Route("pool_stake_snapshot")]
         [HttpGet]
         public async Task<ActionResult<string>> GetPoolStakeSnapshot(string _pool_bech32)
@@ -81,6 +89,14 @@ namespace DCOneCrypto.Api.Controllers
         {
             var res = await _poolService.GetPoolRelays();
             return Ok(res);
+        }
+
+        [Route("pool_metadata")]
+        [HttpPost]
+        public async Task<ActionResult<string>> GetPoolMetadata([FromBody]object pool_bech32_ids)
+        {
+           var res = await _poolService.GetPoolMetadata(pool_bech32_ids);
+           return Ok(res);
         }
 
     }

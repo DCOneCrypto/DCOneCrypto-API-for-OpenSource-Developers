@@ -22,15 +22,23 @@ namespace DCOneCrypto.Api.Services
             return await Execute(request, newurl);
             
         }
-    //    public async Task<string> GetBlockInfo(string blockHashes)
-    //    {
-    //        string newurl = hosturl + "/block_info";
-    //        var request = new RestRequest(newurl, Method.Post);
-    //        request.AddHeader("accept", "application/json");
-    //        request.AddHeader("Content-Type", "application/json");
-    //        request.AddJsonBody(blockHashes);
-    //        return await ExecutePost(request, newurl);
+       public async Task<string> GetBlockInfo(object blockHashes)
+       {
+           string newurl = hosturl + "/block_info";
+           var request = new RestRequest(newurl, Method.Post);
+           request.AddHeader("Content-Type", "application/json");
+           request.AddJsonBody(blockHashes);
+           return await Execute(request, newurl);
 
-    //    }
+       }
+       public async Task<string> GetBlockTxs(object blockHashes)
+       {
+           string newurl = hosturl + "/block_txs";
+           var request = new RestRequest(newurl, Method.Post);
+           request.AddHeader("Content-Type", "application/json");
+           request.AddJsonBody(blockHashes);
+           return await Execute(request, newurl);
+
+       }
     }
 }

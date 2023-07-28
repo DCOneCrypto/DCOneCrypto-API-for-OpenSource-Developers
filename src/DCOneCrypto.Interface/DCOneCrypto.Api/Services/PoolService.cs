@@ -11,6 +11,16 @@ namespace DCOneCrypto.Api.Services
             return await Execute(request, newurl);
             
         }
+
+        public async Task<string> GetPoolInfo(object pool_bech32_ids)
+        {
+           string newurl = hosturl + "/pool_info";
+           var request = new RestRequest(newurl, Method.Post);
+           request.AddHeader("Content-Type", "application/json");
+           request.AddJsonBody(pool_bech32_ids);
+           return await Execute(request, newurl);
+
+        } 
         public async Task<string> GetPoolStakeSnapshot(string _pool_bech32)
         {
             string newurl = hosturl + "/pool_stake_snapshot?_pool_bech32=" + _pool_bech32;
@@ -60,6 +70,16 @@ namespace DCOneCrypto.Api.Services
             return await Execute(request, newurl);
 
         }
+
+        public async Task<string> GetPoolMetadata(object pool_bech32_ids)
+        {
+           string newurl = hosturl + "/pool_metadata";
+           var request = new RestRequest(newurl, Method.Post);
+           request.AddHeader("Content-Type", "application/json");
+           request.AddJsonBody(pool_bech32_ids);
+           return await Execute(request, newurl);
+
+        } 
 
     }
 }

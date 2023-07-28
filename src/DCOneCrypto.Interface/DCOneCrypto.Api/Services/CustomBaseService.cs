@@ -16,11 +16,6 @@ namespace DCOneCrypto.Api.Services
             RestResponse response = await client.ExecuteAsync(request);          
             return response.Content;
         }
-        protected Task<string> ExecutePost(RestRequest request, string urlBase = null)
-        {
-            RestClient client = new RestClient(urlBase);
-            RestResponse response = client.ExecutePost(request);
-            return Task.FromResult<string>(response.Content);
-        }
+        
     }
 }

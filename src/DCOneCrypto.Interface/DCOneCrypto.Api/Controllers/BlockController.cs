@@ -26,13 +26,21 @@ namespace DCOneCrypto.Api.Controllers
             var res = await _blockService.GetBlocks();
             return Ok(res);
         }
-        //[Route("block_info")]
-        //[HttpPost]
-        //public async Task<ActionResult<string>> GetBlockInfo([FromBody]string blockHashes)
-        //{
-        //    var res = await _blockService.GetBlockInfo(blockHashes);
-        //    return Ok(res);
-        //}
+        [Route("block_info")]
+        [HttpPost]
+        public async Task<ActionResult<string>> GetBlockInfo([FromBody]object blockHashes)
+        {
+           var res = await _blockService.GetBlockInfo(blockHashes);
+           return Ok(res);
+        }
+
+        [Route("block_txs")]
+        [HttpPost]
+        public async Task<ActionResult<string>> GetBlockTxs([FromBody]object blockHashes)
+        {
+           var res = await _blockService.GetBlockTxs(blockHashes);
+           return Ok(res);
+        }
 
     }
 }

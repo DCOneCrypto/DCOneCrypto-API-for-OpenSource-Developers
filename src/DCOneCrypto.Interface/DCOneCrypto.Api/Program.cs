@@ -12,6 +12,7 @@ builder.Services.AddScoped<NetworkService>();
 builder.Services.AddScoped<EpochService>();
 builder.Services.AddScoped<BlockService>();
 builder.Services.AddScoped<TransactionsService>();
+builder.Services.AddScoped<AddressService>();
 builder.Services.AddScoped<AssetService>();
 builder.Services.AddScoped<PoolService>();
 builder.Services.AddScoped<ScriptService>();
