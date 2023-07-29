@@ -6,7 +6,7 @@ namespace DCOneCrypto.Api.Controllers
         // GET
         public IActionResult Index()
         {
-            return Redirect("~/swagger");
+            return Redirect("/api-docs/index.html");
         }
     }
 }
