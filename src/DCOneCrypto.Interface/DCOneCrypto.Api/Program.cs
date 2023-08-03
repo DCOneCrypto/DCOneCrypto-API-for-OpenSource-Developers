@@ -3,6 +3,9 @@ using DCOneCrypto.Api.Services;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Interfaces;
+using System.Reflection;
+using Swashbuckle.AspNetCore.Filters;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,17 +55,22 @@ builder.Services.AddSwaggerGen(options =>
                 Url = new Uri("https://dconecrypto.finance")
             }
         });
+    options.ExampleFilters();
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
 }); ;
-
+builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();
-app.UseSwaggerUI(
-    options =>
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "DConecrypto Demo Documentation v1"));
-
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "DConecrypto Demo Documentation v1");
+    options.DefaultModelsExpandDepth(-1);
+});
 app.UseReDoc(options =>
 {
     options.DocumentTitle = "DConecrypto Demo Documentation";

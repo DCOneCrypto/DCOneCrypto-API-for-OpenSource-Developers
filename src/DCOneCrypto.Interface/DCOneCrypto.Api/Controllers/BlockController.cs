@@ -30,18 +30,30 @@ namespace DCOneCrypto.Api.Controllers
         }
         [Route("block_info")]
         [HttpPost]
-        
-        public async Task<ActionResult<string>> GetBlockInfo([FromBody]BlockHashesModel blockHashes)
+        [ProducesResponseType(typeof(BlockHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetBlockInfo([FromBody]BlockHashesModel model)
         {
-           var res = await _blockService.GetBlockInfo(blockHashes);
+            BlockHashesModel blockHashesModel = new BlockHashesModel()
+            {
+                _block_hashes = model._block_hashes
+            }; 
+            var res = await _blockService.GetBlockInfo(blockHashesModel);
            return Ok(res);
         }
 
         [Route("block_txs")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetBlockTxs([FromBody]BlockHashesModel blockHashes)
+        [ProducesResponseType(typeof(BlockHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetBlockTxs([FromBody]BlockHashesModel model)
         {
-           var res = await _blockService.GetBlockTxs(blockHashes);
+
+            BlockHashesModel blockHashesModel = new BlockHashesModel()
+            {
+                _block_hashes = model._block_hashes
+            }; 
+            var res = await _blockService.GetBlockTxs(blockHashesModel);
            return Ok(res);
         }
 
