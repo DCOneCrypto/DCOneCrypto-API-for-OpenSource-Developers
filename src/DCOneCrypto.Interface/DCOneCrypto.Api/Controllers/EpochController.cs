@@ -39,6 +39,7 @@ namespace DCOneCrypto.Api.Controllers
         {
             var res = await _epochService.GetEpochBlockProtocols(_epoch_no);
             return Ok(res);
+
         }
 
     }

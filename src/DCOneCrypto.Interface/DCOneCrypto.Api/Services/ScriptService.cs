@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using DCOneCrypto.Api.Models;
+using RestSharp;
 
 
 namespace DCOneCrypto.Api.Services
@@ -24,12 +25,12 @@ namespace DCOneCrypto.Api.Services
             return await Execute(request, newurl);
         }
 
-        public async Task<string> GetDatumInfo(object _datum_hashes)
+        public async Task<string> GetDatumInfo(DatumHashesModel model)
         {
            string newurl = hosturl + "/datum_info";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_datum_hashes);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
 

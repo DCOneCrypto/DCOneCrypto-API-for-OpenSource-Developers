@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
 using Asp.Versioning;
+using DCOneCrypto.Api.Models;
 
 namespace DCOneCrypto.Api.Controllers
 {
@@ -21,25 +22,43 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("tx_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetTxInfo([FromBody]object txHashes)
+        [ProducesResponseType(typeof(TxHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetTxInfo([FromBody] TxHashesModel model)
         {
-           var res = await _transactionsService.GetTxInfo(txHashes);
+            TxHashesModel txHashes = new TxHashesModel()
+            {
+                _tx_hashes = model._tx_hashes
+            };
+            var res = await _transactionsService.GetTxInfo(txHashes);
            return Ok(res);
         }
 
         [Route("tx_utxos")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetTxUtxos([FromBody]object txHashes)
+        [ProducesResponseType(typeof(TxHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetTxUtxos([FromBody] TxHashesModel model)
         {
-           var res = await _transactionsService.GetTxUtxos(txHashes);
+            TxHashesModel txHashes = new TxHashesModel()
+            {
+                _tx_hashes = model._tx_hashes
+            };
+            var res = await _transactionsService.GetTxUtxos(txHashes);
            return Ok(res);
         }
 
         [Route("tx_metadata")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetTxMetadata([FromBody]object txHashes)
+        [ProducesResponseType(typeof(TxHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetTxMetadata([FromBody] TxHashesModel model)
         {
-           var res = await _transactionsService.GetTxMetadata(txHashes);
+            TxHashesModel txHashes = new TxHashesModel()
+            {
+                _tx_hashes = model._tx_hashes
+            };
+            var res = await _transactionsService.GetTxMetadata(txHashes);
            return Ok(res);
         }
         
@@ -53,9 +72,15 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("tx_status")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetTxStatus([FromBody]object txHashes)
+        [ProducesResponseType(typeof(TxHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetTxStatus([FromBody] TxHashesModel model)
         {
-           var res = await _transactionsService.GetTxStatus(txHashes);
+            TxHashesModel txHashes = new TxHashesModel()
+            {
+                _tx_hashes = model._tx_hashes
+            };
+            var res = await _transactionsService.GetTxStatus(txHashes);
            return Ok(res);
         }
        

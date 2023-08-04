@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
 using Asp.Versioning;
+using DCOneCrypto.Api.Models;
+using DCOneCrypto.Common.Models.CardanoDbSync;
 
 namespace DCOneCrypto.Api.Controllers
 {
@@ -29,9 +31,15 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("account_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountInfo([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountInfo([FromBody] StakeAddressModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountInfo(_stake_addresses);
+            StakeAddressModel stakeAddress = new StakeAddressModel()
+            {
+                _stake_addresses = model._stake_addresses
+            };
+            var res = await _stakeAccountServicee.GetAccountInfo(stakeAddress);
            return Ok(res);
         }
 
@@ -45,49 +53,87 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("account_info_cached")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountInfoCached([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountInfoCached([FromBody] StakeAddressModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountInfoCached(_stake_addresses);
+            StakeAddressModel stakeAddress = new StakeAddressModel()
+            {
+                _stake_addresses = model._stake_addresses
+            }; 
+            var res = await _stakeAccountServicee.GetAccountInfoCached(stakeAddress);
            return Ok(res);
         }
 
         [Route("account_rewards")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountRewards([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressEpochNoModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountRewards([FromBody] StakeAddressEpochNoModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountRewards(_stake_addresses);
+            StakeAddressEpochNoModel stakeAddressEpochNo = new StakeAddressEpochNoModel()
+            {
+                _stake_addresses = model._stake_addresses,
+                _epoch_no=model._epoch_no
+            }; 
+            var res = await _stakeAccountServicee.GetAccountRewards(stakeAddressEpochNo);
            return Ok(res);
         }
 
         [Route("account_updates")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountUpdates([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountUpdates([FromBody] StakeAddressModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountUpdates(_stake_addresses);
+            StakeAddressModel stakeAddress = new StakeAddressModel()
+            {
+                _stake_addresses = model._stake_addresses
+            }; 
+            var res = await _stakeAccountServicee.GetAccountUpdates(stakeAddress);
            return Ok(res);
         }
 
         [Route("account_addresses")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountAddresses([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountAddresses([FromBody] StakeAddressModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountAddresses(_stake_addresses);
+            StakeAddressModel stakeAddress = new StakeAddressModel()
+            {
+                _stake_addresses = model._stake_addresses
+            }; 
+            var res = await _stakeAccountServicee.GetAccountAddresses(stakeAddress);
            return Ok(res);
         }
 
         [Route("account_assets")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountAssets([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountAssets([FromBody] StakeAddressModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountAssets(_stake_addresses);
+            StakeAddressModel stakeAddress = new StakeAddressModel()
+            {
+                _stake_addresses = model._stake_addresses
+            }; 
+            var res = await _stakeAccountServicee.GetAccountAssets(stakeAddress);
            return Ok(res);
         }
 
         [Route("account_history")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAccountHistory([FromBody]object _stake_addresses)
+        [ProducesResponseType(typeof(StakeAddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAccountHistory([FromBody] StakeAddressEpochNoModel model)
         {
-           var res = await _stakeAccountServicee.GetAccountHistory(_stake_addresses);
+            StakeAddressEpochNoModel stakeAddressEpochNo = new StakeAddressEpochNoModel()
+            {
+                _stake_addresses = model._stake_addresses,
+                _epoch_no=model._epoch_no
+            };
+            var res = await _stakeAccountServicee.GetAccountHistory(stakeAddressEpochNo);
            return Ok(res);
         }
 

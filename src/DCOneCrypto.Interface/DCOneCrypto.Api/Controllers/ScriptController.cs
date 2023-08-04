@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
 using Asp.Versioning;
+using DCOneCrypto.Api.Models;
 
 namespace DCOneCrypto.Api.Controllers
 {
@@ -45,9 +46,15 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("datum_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetDatumInfo([FromBody]object datum_hashes)
+        [ProducesResponseType(typeof(DatumHashesModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetDatumInfo([FromBody] DatumHashesModel model)
         {
-           var res = await _scriptService.GetDatumInfo(datum_hashes);
+            DatumHashesModel datumHashes = new DatumHashesModel()
+            {
+                _datum_hashes = model._datum_hashes
+            }; 
+            var res = await _scriptService.GetDatumInfo(datumHashes);
            return Ok(res);
         }
 

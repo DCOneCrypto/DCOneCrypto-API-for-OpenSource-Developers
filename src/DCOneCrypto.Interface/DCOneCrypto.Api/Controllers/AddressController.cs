@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
 using Asp.Versioning;
+using DCOneCrypto.Api.Models;
 
 namespace DCOneCrypto.Api.Controllers
 {
@@ -21,41 +22,73 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("address_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAddressInfo([FromBody]object addresses)
+        [ProducesResponseType(typeof(AddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAddressInfo([FromBody] AddressModel model)
         {
-           var res = await _addressService.GetAddressInfo(addresses);
+            AddressModel addresses = new AddressModel()
+            {
+                _addresses = model._addresses
+            };
+            var res = await _addressService.GetAddressInfo(addresses);
            return Ok(res);
         }
 
         [Route("address_txs")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAddressTxs([FromBody]object addresses)
+        [ProducesResponseType(typeof(AddressTxModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAddressTxs([FromBody] AddressTxModel model)
         {
-           var res = await _addressService.GetAddressTxs(addresses);
+            AddressTxModel addressesTx = new AddressTxModel()
+            {
+                _addresses = model._addresses,
+                _after_block_height=model._after_block_height
+            };
+            var res = await _addressService.GetAddressTxs(addressesTx);
            return Ok(res);
         }
 
         [Route("credential_utxos")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetCredentialUtxos([FromBody]object addresses)
+        [ProducesResponseType(typeof(PaymentCredentialsModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetCredentialUtxos([FromBody]PaymentCredentialsModel model)
         {
-           var res = await _addressService.GetCredentialUtxos(addresses);
+            PaymentCredentialsModel paymentCredential = new PaymentCredentialsModel()
+            {
+                _payment_credentials = model._payment_credentials
+            }; 
+            var res = await _addressService.GetCredentialUtxos(paymentCredential);
            return Ok(res);
         }
 
         [Route("address_assets")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetAddressAssets([FromBody]object addresses)
+        [ProducesResponseType(typeof(AddressModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetAddressAssets([FromBody] AddressModel model)
         {
-           var res = await _addressService.GetAddressAssets(addresses);
+            AddressModel addresses = new AddressModel()
+            {
+                _addresses = model._addresses
+            };
+            var res = await _addressService.GetAddressAssets(addresses);
            return Ok(res);
         }
 
         [Route("credential_txs")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetCredentialTxs([FromBody]object addresses)
+        [ProducesResponseType(typeof(PaymentCredentialsTxModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetCredentialTxs([FromBody] PaymentCredentialsTxModel model)
         {
-           var res = await _addressService.GetCredentialTxs(addresses);
+            PaymentCredentialsTxModel paymentCredentialsTx = new PaymentCredentialsTxModel()
+            {
+                _payment_credentials = model._payment_credentials,
+                _after_block_height=model._after_block_height
+            };
+            var res = await _addressService.GetCredentialTxs(paymentCredentialsTx);
            return Ok(res);
         }
 

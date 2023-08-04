@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using DCOneCrypto.Api.Models;
+using RestSharp;
 
 namespace DCOneCrypto.Api.Services
 {
@@ -12,12 +13,12 @@ namespace DCOneCrypto.Api.Services
             
         }
 
-        public async Task<string> GetPoolInfo(object pool_bech32_ids)
+        public async Task<string> GetPoolInfo(PoolBech32IdsModel model)
         {
            string newurl = hosturl + "/pool_info";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(pool_bech32_ids);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
 
         } 
@@ -71,12 +72,12 @@ namespace DCOneCrypto.Api.Services
 
         }
 
-        public async Task<string> GetPoolMetadata(object pool_bech32_ids)
+        public async Task<string> GetPoolMetadata(PoolBech32IdsModel model)
         {
            string newurl = hosturl + "/pool_metadata";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(pool_bech32_ids);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
 
         } 

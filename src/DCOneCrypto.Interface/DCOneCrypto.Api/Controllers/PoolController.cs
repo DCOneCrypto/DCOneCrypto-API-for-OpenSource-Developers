@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DCOneCrypto.Api.Services;
 using Asp.Versioning;
+using DCOneCrypto.Api.Models;
 
 namespace DCOneCrypto.Api.Controllers
 {
@@ -29,9 +30,16 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_info")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetPoolInfo([FromBody]object pool_bech32_ids)
+        [ProducesResponseType(typeof(PoolBech32IdsModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetPoolInfo([FromBody] PoolBech32IdsModel model)
         {
-           var res = await _poolService.GetPoolInfo(pool_bech32_ids);
+
+            PoolBech32IdsModel poolBech32Ids = new PoolBech32IdsModel()
+            {
+                _pool_bech32_ids = model._pool_bech32_ids
+            }; 
+            var res = await _poolService.GetPoolInfo(poolBech32Ids);
            return Ok(res);
         }
 
@@ -93,9 +101,15 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_metadata")]
         [HttpPost]
-        public async Task<ActionResult<string>> GetPoolMetadata([FromBody]object pool_bech32_ids)
+        [ProducesResponseType(typeof(PoolBech32IdsModel), 201)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<string>> GetPoolMetadata([FromBody]PoolBech32IdsModel model)
         {
-           var res = await _poolService.GetPoolMetadata(pool_bech32_ids);
+            PoolBech32IdsModel poolBech32Ids = new PoolBech32IdsModel()
+            {
+                _pool_bech32_ids = model._pool_bech32_ids
+            };
+            var res = await _poolService.GetPoolMetadata(model);
            return Ok(res);
         }
 

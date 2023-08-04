@@ -1,4 +1,6 @@
-﻿using RestSharp;
+﻿using DCOneCrypto.Api.Models;
+using DCOneCrypto.Common.Models.CardanoDbSync;
+using RestSharp;
 
 namespace DCOneCrypto.Api.Services
 {
@@ -12,12 +14,12 @@ namespace DCOneCrypto.Api.Services
             
         }
 
-        public async Task<string> GetAccountInfo(object _stake_addresses)
+        public async Task<string> GetAccountInfo(StakeAddressModel model)
         {
            string newurl = hosturl + "/account_info";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
         
@@ -38,48 +40,48 @@ namespace DCOneCrypto.Api.Services
            return await Execute(request, newurl);
         }
 
-        public async Task<string> GetAccountRewards(object _stake_addresses)
+        public async Task<string> GetAccountRewards(StakeAddressEpochNoModel model)
         {
            string newurl = hosturl + "/account_rewards";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
 
-        public async Task<string> GetAccountUpdates(object _stake_addresses)
+        public async Task<string> GetAccountUpdates(StakeAddressModel model)
         {
            string newurl = hosturl + "/account_updates";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
 
-        public async Task<string> GetAccountAddresses(object _stake_addresses)
+        public async Task<string> GetAccountAddresses(StakeAddressModel model)
         {
            string newurl = hosturl + "/account_addresses";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
 
-        public async Task<string> GetAccountAssets(object _stake_addresses)
+        public async Task<string> GetAccountAssets(StakeAddressModel model)
         {
            string newurl = hosturl + "/account_assets";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
 
-        public async Task<string> GetAccountHistory(object _stake_addresses)
+        public async Task<string> GetAccountHistory(StakeAddressEpochNoModel model)
         {
            string newurl = hosturl + "/account_history";
            var request = new RestRequest(newurl, Method.Post);
            request.AddHeader("Content-Type", "application/json");
-           request.AddJsonBody(_stake_addresses);
+           request.AddJsonBody(model);
            return await Execute(request, newurl);
         }
     }

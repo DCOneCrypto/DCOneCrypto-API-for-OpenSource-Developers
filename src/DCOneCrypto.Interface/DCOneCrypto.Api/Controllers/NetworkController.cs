@@ -34,7 +34,7 @@ namespace DCOneCrypto.Api.Controllers
         }
         [Route("totals")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetTotals(string _epoch_no)
+        public async Task<ActionResult<string>> GetTotals(string _epoch_no="400")
         {
             var res = await _networkService.GetTotals(_epoch_no);
             return Ok(res);

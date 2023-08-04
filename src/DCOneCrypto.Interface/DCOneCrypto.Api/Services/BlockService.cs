@@ -31,7 +31,7 @@ namespace DCOneCrypto.Api.Services
            return await Execute(request, newurl);
 
        }
-       public async Task<string> GetBlockTxs(object blockHashes)
+       public async Task<string> GetBlockTxs(BlockHashesModel blockHashes)
        {
            string newurl = hosturl + "/block_txs";
            var request = new RestRequest(newurl, Method.Post);
