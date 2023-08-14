@@ -10,8 +10,8 @@ namespace DCOneCrypto.Api.Models
             {
                 _datum_hashes = new List<string>()
                 {
-                    "818ee3db3bbbd04f9f2ce21778cac3ac605802a4fcb00c8b3a58ee2dafc17d46",
-                    "45b0cfc220ceec5b7c1c62c4d4193d38e4eba48e8815729ce75f9c0ab0e4c1c0"
+                    "18ca176230064f97656ca45eae1533ce06986b87fdedd103b6e8682c380d990a",
+                    "28b20e91bbedd2442f558da792fad92340821555e9ff81ed1f33d7da4349c238"
                 }
             };
         }
