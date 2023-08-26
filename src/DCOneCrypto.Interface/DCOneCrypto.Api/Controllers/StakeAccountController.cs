@@ -45,7 +45,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("account_utxos")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetAccountUtxos(string _stake_address)
+        public async Task<ActionResult<string>> GetAccountUtxos(string _stake_address="stake1u8wzju2t60eulw9mved8uls9xvfxu0aluryqhqxlzn7e8ps5cwgq2")
         {
             var res = await _stakeAccountServicee.GetAccountUtxos(_stake_address);
             return Ok(res);

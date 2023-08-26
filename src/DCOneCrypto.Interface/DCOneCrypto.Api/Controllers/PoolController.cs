@@ -45,7 +45,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_stake_snapshot")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolStakeSnapshot(string _pool_bech32)
+        public async Task<ActionResult<string>> GetPoolStakeSnapshot(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk")
         {
             var res = await _poolService.GetPoolStakeSnapshot(_pool_bech32);
             return Ok(res);
@@ -53,7 +53,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_delegators")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolDelegators(string _pool_bech32)
+        public async Task<ActionResult<string>> GetPoolDelegators(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk")
         {
             var res = await _poolService.GetPoolDelegators(_pool_bech32);
             return Ok(res);
@@ -61,7 +61,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_delegators_history")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolDelegatorsHisory(string _pool_bech32, string _epoch_no)
+        public async Task<ActionResult<string>> GetPoolDelegatorsHisory(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk", string _epoch_no="431")
         {
             var res = await _poolService.GetPoolDelegatorsHisory(_pool_bech32, _epoch_no);
             return Ok(res);
@@ -69,7 +69,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_blocks")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolBlocks(string _pool_bech32, string _epoch_no)
+        public async Task<ActionResult<string>> GetPoolBlocks(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk", string _epoch_no="431")
         {
             var res = await _poolService.GetPoolBlocks(_pool_bech32, _epoch_no);
             return Ok(res);
@@ -77,7 +77,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_history")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolHistory(string _pool_bech32, string _epoch_no)
+        public async Task<ActionResult<string>> GetPoolHistory(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk", string _epoch_no="431")
         {
             var res = await _poolService.GetPoolHistory(_pool_bech32, _epoch_no);
             return Ok(res);
@@ -85,7 +85,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("pool_updates")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetPoolUpdates(string _pool_bech32)
+        public async Task<ActionResult<string>> GetPoolUpdates(string _pool_bech32="pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk")
         {
             var res = await _poolService.GetPoolUpdates(_pool_bech32);
             return Ok(res);

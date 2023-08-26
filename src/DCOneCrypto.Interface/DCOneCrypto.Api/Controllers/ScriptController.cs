@@ -38,7 +38,7 @@ namespace DCOneCrypto.Api.Controllers
 
         [Route("script_redeemers")]
         [HttpGet]
-        public async Task<ActionResult<string>> GetScriptHash(string script_hash)
+        public async Task<ActionResult<string>> GetScriptHash(string script_hash="b88134c984261d8cc0e85c5590c4790726a9ed21cf04dd12d7aacc6f1049e5e8")
         {
             var res = await _scriptService.GetScriptHash(script_hash);
             return Ok(res);
