@@ -44,7 +44,7 @@ builder.Services.AddSwaggerGen(options =>
             {
               {"x-logo", new OpenApiObject
                 {
-                   {"url", new OpenApiString("https://dconecrypto.finance/Common/Images/app-logo-on-dark.svg")},
+                   {"url", new OpenApiString("https://github.com/DCOneCrypto/DCOneCrypto-API-for-OpenSource-Developers/blob/staging/image/public-image/DCOneCrypto.png?raw=true")},
                    { "altText", new OpenApiString("DCOne Crypto Api")}
                 }
               }
