@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>False|2023-10-20T10:47:39.2738917Z;True|2023-10-20T17:40:37.2439923+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

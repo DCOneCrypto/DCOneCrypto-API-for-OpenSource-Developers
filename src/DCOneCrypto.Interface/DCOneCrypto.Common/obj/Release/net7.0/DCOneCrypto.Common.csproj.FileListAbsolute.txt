@@ -1,0 +1,12 @@
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Release\net7.0\DCOneCrypto.Common.deps.json
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Release\net7.0\DCOneCrypto.Common.dll
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Release\net7.0\DCOneCrypto.Common.pdb
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.csproj.AssemblyReference.cache
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.GeneratedMSBuildEditorConfig.editorconfig
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.AssemblyInfoInputs.cache
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.AssemblyInfo.cs
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.csproj.CoreCompileInputs.cache
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.dll
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\refint\DCOneCrypto.Common.dll
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\DCOneCrypto.Common.pdb
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Release\net7.0\ref\DCOneCrypto.Common.dll
