@@ -33,7 +33,6 @@ H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCr
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\System.Text.Json.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\DCOneCrypto.Common.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\bin\Release\net7.0\DCOneCrypto.Common.pdb
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.csproj.AssemblyReference.cache

@@ -32,7 +32,7 @@ builder.Services.AddSwaggerGen(options =>
         {
             Title = "DCOne Crypto Api Documentation",
             Version = "v1",
-            Description = "This is a DCOne Crypto Api - Endpoint: https://gateway.dconecrypto.finance",
+            Description = "This is a DCOne Crypto Api - Endpoint: https://api.dconecrypto.finance",
             TermsOfService = new Uri("https://dconecrypto.finance"),
             Contact = new OpenApiContact
             {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aeWviNwS0QGrvo2wZF086gmzeda8oNt1M/viK+ZMB80WtBI2IaYQT9Zx9WO2jiqPmWA12I3jlo8pSJ9FUzxXlw==",
+  "dgSpecHash": "j6uD2/zOmHeUavZ4H8GtsZqHFCzmCAdqTxNgN6tuJ6LrPw9DRysmwYS1gWbeYyn4c+GCrJqPE7bw86eQp1Tyow==",
   "success": true,
   "projectFilePath": "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
   "expectedPackageFiles": [],
