@@ -22,6 +22,7 @@ builder.Services.AddScoped<AssetService>();
 builder.Services.AddScoped<PoolService>();
 builder.Services.AddScoped<ScriptService>();
 builder.Services.AddScoped<StakeAccountService>();
+builder.Services.AddScoped<PriceService>();
 builder.Services.AddApiVersioning(options => options.AssumeDefaultVersionWhenUnspecified = true).AddMvc();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

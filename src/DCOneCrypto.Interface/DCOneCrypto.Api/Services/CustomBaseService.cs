@@ -1,9 +1,5 @@
-﻿using System.Text.Json;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using RestSharp;
+﻿using RestSharp;
+using System.Net;
 
 namespace DCOneCrypto.Api.Services
 {

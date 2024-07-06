@@ -50,10 +50,11 @@ H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCr
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\staticwebassets.build.json
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\staticwebassets.development.json
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\scopedcss\bundle\DCOneCrypto.Api.styles.css
-H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.csproj.CopyComplete
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\refint\DCOneCrypto.Api.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.xml
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.pdb
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.genruntimeconfig.cache
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\ref\DCOneCrypto.Api.dll
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCrypto.Api.sourcelink.json
+H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Api\obj\Release\net7.0\DCOneCry.EE2FC29D.Up2Date

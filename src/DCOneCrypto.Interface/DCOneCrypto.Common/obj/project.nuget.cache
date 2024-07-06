@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "j6uD2/zOmHeUavZ4H8GtsZqHFCzmCAdqTxNgN6tuJ6LrPw9DRysmwYS1gWbeYyn4c+GCrJqPE7bw86eQp1Tyow==",
+  "dgSpecHash": "AJJZvYXmvI588nA8Cf0iDU9v2570E+3UFeRYaoF/7QXRtgNH+HhLy1ZBMcGUdoL+iK7ClAJodH7EuZXmkD7EkA==",
   "success": true,
   "projectFilePath": "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
