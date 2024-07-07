@@ -9,8 +9,6 @@ namespace DCOneCrypto.Api.Services
         {
             string newurl = hosturl + "/swap/averagePrice/ADA/" + tokenid;
             var request = new RestRequest(newurl, Method.Get);
-            request.AddHeader("Is-Dev", "true");
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
             return await Execute(request, newurl);
 
         }

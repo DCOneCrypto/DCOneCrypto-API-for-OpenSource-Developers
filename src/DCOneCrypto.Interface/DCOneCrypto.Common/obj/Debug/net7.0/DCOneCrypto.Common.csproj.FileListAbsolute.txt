@@ -58,3 +58,15 @@ H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCr
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\refint\DCOneCrypto.Common.dll
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.pdb
 H:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\ref\DCOneCrypto.Common.dll
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Debug\net7.0\DCOneCrypto.Common.deps.json
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Debug\net7.0\DCOneCrypto.Common.dll
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\bin\Debug\net7.0\DCOneCrypto.Common.pdb
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.AssemblyInfoInputs.cache
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.AssemblyInfo.cs
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.csproj.CoreCompileInputs.cache
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.sourcelink.json
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.dll
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\refint\DCOneCrypto.Common.dll
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\DCOneCrypto.Common.pdb
+D:\DEV\Cardano\DCOneCrypto\DCOneCrypto-API-for-OpenSource-Developers\src\DCOneCrypto.Interface\DCOneCrypto.Common\obj\Debug\net7.0\ref\DCOneCrypto.Common.dll

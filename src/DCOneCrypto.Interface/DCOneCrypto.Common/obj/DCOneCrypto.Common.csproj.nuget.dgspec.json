@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj": {}
+    "D:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj": {}
   },
   "projects": {
-    "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj": {
+    "D:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
+        "projectUniqueName": "D:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
         "projectName": "DCOneCrypto.Common",
-        "projectPath": "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
+        "projectPath": "D:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\DCOneCrypto.Common.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "H:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\obj\\",
+        "outputPath": "D:\\DEV\\Cardano\\DCOneCrypto\\DCOneCrypto-API-for-OpenSource-Developers\\src\\DCOneCrypto.Interface\\DCOneCrypto.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,26 +56,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

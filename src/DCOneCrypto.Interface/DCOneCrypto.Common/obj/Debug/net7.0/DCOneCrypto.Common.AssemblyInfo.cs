@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DCOneCrypto.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db0b5b4a9194e4ff8cdf72edd1d03da0bc076752")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c54c3429b5cc839f61eff45056ab09927cdfdd2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DCOneCrypto.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DCOneCrypto.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
