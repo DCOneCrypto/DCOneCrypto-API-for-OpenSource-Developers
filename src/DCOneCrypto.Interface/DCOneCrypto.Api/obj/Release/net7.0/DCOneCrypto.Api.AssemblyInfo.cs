@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DCOneCrypto.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db0b5b4a9194e4ff8cdf72edd1d03da0bc076752")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c33b5f494947130c2cc743bf269ebce39b30cad6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DCOneCrypto.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DCOneCrypto.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
